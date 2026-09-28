@@ -13,7 +13,7 @@ class BonusDrink
     amount.times do
       bottle_count += 1
       # 3本ボトルが貯まるごとにボーナスとして1追加する
-      if ((bottle_count+1) % 3) == 0
+      if (bottle_count % 3) == 0
         bottle_count += 1
       end
     end
