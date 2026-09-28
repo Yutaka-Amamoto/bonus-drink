@@ -10,10 +10,10 @@ class BonusDrink
     end
     # ボトルカウンタを初期化する
     bottle_count = 0
-    amount.times do |loop_count|
+    amount.times do
       bottle_count += 1
-      # 3本ごとにボーナスとして1追加する
-      if ((loop_count+1) % 3) == 0
+      # 3本ボトルが貯まるごとにボーナスとして1追加する
+      if ((bottle_count+1) % 3) == 0
         bottle_count += 1
       end
     end
